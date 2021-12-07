@@ -1,0 +1,88 @@
+#define RESV_SPACE    " "
+#define RESV_L_(      "("       // 左結合 x(y)      関数呼出し演算子
+#define RESV_L_)      ")"       // 左結合 x(y)      関数呼出し演算子
+#define RESV_L_[      "{"       //        {x}
+#define RESV_L_]      "}"       //        {x}
+#define RESV_L_[      "["       // 左結合 x[y]      添字演算子
+#define RESV_L_]      "]"       // 左結合 x[y]      添字演算子
+#define RESV_L_.      "."       // 左結合 x . y     .演算子（ドット演算子）
+#define RESV_L_->     "->"      // 左結合 x -> y    ->演算子（アロー演算子）
+#define RESV_L_++     "++"      // 左結合 x++       後置増分演算子
+#define RESV_L_--     "--"      // 左結合 y--       後置減分演算子
+#define RESV_R_++     "++"      // 右結合 ++x       前置増分演算子
+#define RESV_R_--     "--"      // 右結合 --y       前置減分演算子
+#define RESV_R_SIZEOF "sizeof"  // 右結合 sizeof x  sizeof演算子
+#define RESV_R_&      "&"       // 右結合 &x        単項&演算子（アドレス演算子）
+#define RESV_R_*      "*"       // 右結合 *x        単項*演算子（間接演算子）
+#define RESV_R_+      "+"       // 右結合 +x        単項+演算子
+#define RESV_R_-      "-"       // 右結合 -x        単項-演算子
+#define RESV_R_~      "~"       // 右結合 ~x        ~演算子（補数演算子）
+#define RESV_R_!      "!"       // 右結合 !x        論理否定演算子
+#define RESV_SIGNED   "signed"
+#define RESV_UNSIGNED "unsigned"
+#define RESV_VOID     "void"
+#define RESV_CHAR     "char"
+#define RESV_SHORT    "short"
+#define RESV_INT      "int"
+#define RESV_LONG     "long"
+#define RESV_FLOAT    "float"
+#define RESV_DOUBLE   "double"
+#define RESV_R_(      "("       // 右結合 (x)y      キャスト演算子
+#define RESV_R_)      ")"       // 右結合 (x)y      キャスト演算子
+#define RESV_L_*      "*"       // 左結合 x * y     ２項*演算子
+#define RESV_L_/      "/"       // 左結合 x / y     /演算子
+#define RESV_L_%      "%"       // 左結合 x % y     %演算子
+#define RESV_L_+      "+"       // 左結合 x + y     ２項+演算子
+#define RESV_L_-      "-"       // 左結合 x - y     ２項-演算子
+#define RESV_L_<<     "<<"      // 左結合 x << y    <<演算子
+#define RESV_L_>>     ">>"      // 左結合 x >> y    >>演算子
+#define RESV_L_<      "<"       // 左結合 x < y     <演算子
+#define RESV_L_<=     "<="      // 左結合 x <= y    <=演算子
+#define RESV_L_>      ">"       // 左結合 x > y     >演算子
+#define RESV_L_>=     ">="      // 左結合 x >= y    >=演算子
+#define RESV_L_==     "=="      // 左結合 x == y    ==演算子
+#define RESV_L_!=     "!="      // 左結合 x != y    !=演算子
+#define RESV_L_&      "&"       // 左結合 x & y     ビット単位のAND演算子
+#define RESV_L_^      "^"       // 左結合 x ^ y     ビット単位の排他OR演算子
+#define RESV_L_|      "|"       // 左結合 x | y     ビット単位のOR演算子
+#define RESV_L_&&     "&&"      // 左結合 x && y    論理AND演算子
+#define RESV_L_||     "||"      // 左結合 x || y    論理OR演算子
+#define RESV_R_?      "?"       // 右結合 x ? y : z 条件演算子（二項演算子）
+#define RESV_R_:      ":"       // 右結合 x ? y : z 条件演算子（二項演算子）
+#define RESV_R_=      "="       // 右結合 x = y     複合代入演算子
+#define RESV_R_+=     "+="      // 右結合 x += y    複合代入演算子
+#define RESV_R_-=     "-="      // 右結合 x -= y    複合代入演算子
+#define RESV_R_*=     "*="      // 右結合 x *= y    複合代入演算子
+#define RESV_R_/=     "/="      // 右結合 x /= y    複合代入演算子
+#define RESV_R_%=     "%="      // 右結合 x %= y    複合代入演算子
+#define RESV_R_<<=    "<<="     // 右結合 x <<= y   複合代入演算子
+#define RESV_R_>>=    ">>="     // 右結合 x >>= y   複合代入演算子
+#define RESV_R_&=     "&="      // 右結合 x &= y    複合代入演算子
+#define RESV_R_^=     "^="      // 右結合 x ^= y    複合代入演算子
+#define RESV_R_|=     "|="      // 右結合 x |= y    複合代入演算子
+#define RESV_L_,      ","       // 左結合 x , y     コンマ演算子
+#define RESV_#DEFINE  "#define"
+#define RESV_#INCLUDE "#include"
+#define RESV_AUTO     "auto"
+#define RESV_BREAK    "break"
+#define RESV_CASE     "case"
+#define RESV_CONST    "const"
+#define RESV_CONTINUE "continue"
+#define RESV_DEFAULT  "default"
+#define RESV_DO       "do"
+#define RESV_ELSE     "else"
+#define RESV_ENUM     "enum"
+#define RESV_EXTERN   "extern"
+#define RESV_FOR      "for"
+#define RESV_GOTO     "goto"
+#define RESV_IF       "if"
+#define RESV_MAIN     "main"      // Entry point
+#define RESV_REGISTER "register"
+#define RESV_RETURN   "return"
+#define RESV_STATIC   "static"
+#define RESV_STRUCT   "struct"
+#define RESV_SWITCH   "switch"
+#define RESV_TYPEDEF  "typedef"
+#define RESV_UNION    "union"
+#define RESV_VOLATILE "volatile"
+#define RESV_WHILE    "while"
